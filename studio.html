@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一麻袋 AI 摄影棚｜AI 工作台</title>
+  <meta name="description" content="在 AI 工作台中组合服装、模特、姿势与背景，一键生成服装大片。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-logo-wrap">
+        <img src="assets/images/logo.png" alt="一麻袋 AI 摄影棚 Logo" class="brand-logo" />
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">一麻袋 AI 摄影棚</span>
+        <span class="brand-tagline">AI MODEL · POSE · STUDIO</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">首页</a>
+      <a href="models.html" class="nav-link">模特库</a>
+      <a href="poses.html" class="nav-link">姿势库</a>
+      <a href="studio.html" class="nav-link is-active">AI 工作台</a>
+      <a href="my.html" class="nav-link">我的</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="section page-hero">
+  <div class="container">
+    <h1>AI 工作台</h1>
+    <p class="page-intro">
+      把一件衣服从平铺图变成一组完整的模特上身大片，在这里完成。从左到右：设置区、画面预览区和工作流队列区。
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container studio-layout">
+    <aside class="studio-panel studio-left">
+      <h2>设置区</h2>
+      <div class="panel-block">
+        <h3>换衣服</h3>
+        <p class="panel-note">选择一件服装，支持多张平铺图与上身图。</p>
+      </div>
+      <div class="panel-block">
+        <h3>换模特</h3>
+        <p class="panel-note">从已购或定制的数字模特中选择，并切换 LoRA 风格。</p>
+      </div>
+      <div class="panel-block">
+        <h3>换姿势</h3>
+        <p class="panel-note">应用单姿势或姿势组，决定这一组图的身体语言。</p>
+      </div>
+      <div class="panel-block">
+        <h3>换背景</h3>
+        <p class="panel-note">在纯色棚拍、简易背景与场景背景之间切换。</p>
+      </div>
+    </aside>
+
+    <section class="studio-center">
+      <h2 class="visually-hidden">画面预览区</h2>
+      <div class="preview-frame">
+        <div class="preview-canvas">
+          <div class="preview-tag">预览 · 模特上身效果</div>
+          <div class="preview-placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="studio-panel studio-right">
+      <h2>工作流队列</h2>
+      <ul class="queue-list">
+        <li class="queue-item is-running">
+          <div class="queue-main">
+            <span class="queue-title">牛仔裤 · YM-305 · 套图 G-01</span>
+            <span class="queue-status">生成中…</span>
+          </div>
+          <div class="queue-meta">4 张图 · 背景：街拍 · 提交于 12:03</div>
+        </li>
+        <li class="queue-item">
+          <div class="queue-main">
+            <span class="queue-title">连衣裙 · YM-203 · 单姿势 P-S02</span>
+            <span class="queue-status done">已完成</span>
+          </div>
+          <div class="queue-meta">3 张图 · 背景：室内棚拍 · 完成于 11:48</div>
+        </li>
+        <li class="queue-item">
+          <div class="queue-main">
+            <span class="queue-title">外套 · YM-101 · 套图 G-05</span>
+            <span class="queue-status queued">排队中</span>
+          </div>
+          <div class="queue-meta">5 张图 · 背景：城市夜景</div>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="studio-bottom">
+  <div class="container studio-bottom-inner">
+    <div class="studio-bottom-left">
+      <span class="pill pill-soft">方案 · 牛仔裤 · 街拍九宫格</span>
+      <span class="studio-bottom-text">当前设置已保存为草稿，可随时再次生成。</span>
+    </div>
+    <div class="studio-bottom-right">
+      <button class="btn btn-outline">保存方案</button>
+      <button class="btn btn-primary">开始生成</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<a href="studio.html" class="fab-workbench" aria-label="打开 AI 工作台">
+  <span class="fab-icon">▶</span>
+</a>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 一麻袋 AI 摄影棚 · All rights reserved.</span>
+    <span class="footer-meta">Design for AI fashion studios · Midjourney inspired · Orange accent</span>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
